@@ -27,6 +27,8 @@ namespace DatingApp.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<AppUser>>> GetUsers()
         {
+
+            //added first comment
             return await _context.Users.ToListAsync();
         }
     }
